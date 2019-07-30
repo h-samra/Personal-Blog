@@ -5,13 +5,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Blog.Models;
+using Blog.Data;
+using Blog.Data.Repository;
 
 namespace Blog.Controllers
 {
     public class HomeController : Controller
     {
+        private IRepository _repo;
+        public HomeController(IRepository repo)
+        {
+            _repo = repo;
+        }
         public IActionResult Index()
         {
+            var posts = _repo.GetAllPosts();
             return View();
         }
 
@@ -46,9 +54,17 @@ namespace Blog.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(Post post)
+        public async Task<IActionResult> Edit(Post post)
         {
-            return RedirectToAction("Index");
+            _repo.AddPost(post);
+            if (await _repo.SaveChangesAsync())
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(post);
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

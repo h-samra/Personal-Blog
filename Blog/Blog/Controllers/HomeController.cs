@@ -34,6 +34,23 @@ namespace Blog.Controllers
             return View();
         }
 
+        public IActionResult Post()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Edit()
+        {
+            return View(new Post());
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Post post)
+        {
+            return RedirectToAction("Index");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

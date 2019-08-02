@@ -1,19 +1,31 @@
 ﻿@model IEnumerable<Post>
 @{
     ViewData["Title"] = "Home Page";
+    var empty = true;
 }
 
 <h2>Welcome to my blog!</h2>
 
 <div>
     <ul>
-        @foreach(var post in Model)
+        @foreach (var post in Model)
         {
-        <li>
-            <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
-                @post.Title
-            </a>
-        </li>
+            <li>
+                <p>
+                    @post.Created.ToShortDateString() -
+                    <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
+                        @post.Title
+                    </a>
+                </p>
+                @{empty = false;}
+            </li>
+
         }
     </ul>
+    @if (empty)
+    {
+        <p>There are currently no blog posts to display.</p>
+        <p>This site is currently under 1 week old, so check back soon for great content posted bi-weekly.</p>
+        <p>Until there are posts added, check out the <a asp-area="" asp-controller="Home" asp-action="About">about</a> page to learn about me (Herman) and about how this site was built!</p>
+    }
 </div>

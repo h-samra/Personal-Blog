@@ -15,7 +15,6 @@ C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\B
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.TagHelpers.output.cache
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.RazorCoreGenerate.cache
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs

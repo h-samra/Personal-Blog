@@ -31,6 +31,6 @@ C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\B
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.pdb
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.csproj.CopyComplete
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Home\Post.g.cshtml.cs
-C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Home\Edit.g.cshtml.cs
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Login.g.cshtml.cs
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Panel\Index.g.cshtml.cs
+C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Panel\Edit.g.cshtml.cs

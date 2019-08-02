@@ -36,6 +36,7 @@
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li><a asp-area="" asp-controller="Home" asp-action="Edit">Create Post</a></li>
+                        <li><a asp-area="" asp-controller="Panel" asp-action="Index">Admin Panel</a></li>
                     }
                 </ul>
                 <ul class="nav navbar-nav" style="float: right">

@@ -39,7 +39,7 @@ namespace Blog
 
             services.ConfigureApplicationCookie(options =>
             {
-                options.LoginPath = "Auth/Login";
+                options.LoginPath = "/Auth/Login";
             });
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["DefaultConnection"]));

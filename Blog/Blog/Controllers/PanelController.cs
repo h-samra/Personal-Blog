@@ -10,10 +10,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace Blog.Controllers
 {
     [Authorize (Roles = "Admin")]
-    public class PannelController : Controller
+    public class PanelController : Controller
     {
         private IRepository _repo;
-        public PannelController(IRepository repo)
+        public PanelController(IRepository repo)
         {
             _repo = repo;
         }

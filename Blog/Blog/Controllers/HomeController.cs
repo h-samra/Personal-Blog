@@ -8,15 +8,18 @@ using Blog.Models;
 using Blog.Data;
 using Blog.Data.Repository;
 using Microsoft.AspNetCore.Authorization;
+using Blog.Data.FileManager;
 
 namespace Blog.Controllers
 {
     public class HomeController : Controller
     {
         private IRepository _repo;
-        public HomeController(IRepository repo)
+        private IFileManager _file;
+        public HomeController(IRepository repo, IFileManager file)
         {
             _repo = repo;
+            _file = file;
         }
         public IActionResult Index()
         {
@@ -53,6 +56,13 @@ namespace Blog.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpGet("/Image/{image}")]
+        public IActionResult Image(string image)
+        {
+            var type = image.Substring(image.LastIndexOf(".") + 1);
+            return new FileStreamResult(_file.ImageStream(image), $"image/{type}");
         }
     }
 }

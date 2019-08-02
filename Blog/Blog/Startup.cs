@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Blog.Data;
+using Blog.Data.FileManager;
 using Blog.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -45,6 +46,7 @@ namespace Blog
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["DefaultConnection"]));
 
             services.AddTransient<IRepository, Repository>();
+            services.AddTransient<IFileManager, FileManager>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {

@@ -72,7 +72,7 @@ using Blog.Models;
             WriteLiteral("        <li>\r\n            ");
             EndContext();
             BeginContext(196, 114, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "580b484345a647bba32291e20ea361ba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3e8ebaf1fcd43319340f44d136bf52a", async() => {
                 BeginContext(263, 18, true);
                 WriteLiteral("\r\n                ");
                 EndContext();
@@ -119,7 +119,7 @@ using Blog.Models;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(324, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8b111eb686742f2bd41e107c4741de4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26ac590b5a9842c98df3639f4ba1e4e2", async() => {
                 BeginContext(391, 36, true);
                 WriteLiteral("\r\n                Edit\r\n            ");
                 EndContext();
@@ -156,7 +156,7 @@ using Blog.Models;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(445, 111, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d73c4d6a6b64f8abe559715b2c2439d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62f4516c50d045328803aa8ff470dab9", async() => {
                 BeginContext(514, 38, true);
                 WriteLiteral("\r\n                Remove\r\n            ");
                 EndContext();

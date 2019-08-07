@@ -4,28 +4,48 @@
     var empty = true;
 }
 
-<h2>Welcome to my blog!</h2>
 
-<div>
-    <ul>
-        @foreach (var post in Model)
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Herman's Blog</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+
+</head>
+<body>
+    <br />
+    <h2>Welcome to my blog!</h2>
+    <p>My name is Herman, and this is my personal website where I share the projects I like to work on.</p>
+    <p>Click on a link to view more details on the blog post.</p>
+    <br />
+
+    <div>
+        <ul>
+            @foreach (var post in Model)
+            {
+                <li>
+                    <p>
+                        @post.Created.ToShortDateString() -
+                        <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
+                            @post.Title
+                        </a>
+                    </p>
+                    @{empty = false;}
+                </li>
+
+            }
+        </ul>
+        @if (empty)
         {
-            <li>
-                <p>
-                    @post.Created.ToShortDateString() -
-                    <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
-                        @post.Title
-                    </a>
-                </p>
-                @{empty = false;}
-            </li>
-
+            <p>There are currently no blog posts to display.</p>
+            <p>This site is currently under 1 week old, so check back soon for great content posted bi-weekly.</p>
+            <p>Until there are posts added, check out the <a asp-area="" asp-controller="Home" asp-action="About">about</a> page to learn about me and about how this site was built!</p>
         }
-    </ul>
-    @if (empty)
-    {
-        <p>There are currently no blog posts to display.</p>
-        <p>This site is currently under 1 week old, so check back soon for great content posted bi-weekly.</p>
-        <p>Until there are posts added, check out the <a asp-area="" asp-controller="Home" asp-action="About">about</a> page to learn about me (Herman) and about how this site was built!</p>
-    }
-</div>
+    </div>
+
+</body>
+</html>

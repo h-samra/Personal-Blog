@@ -1,14 +1,16 @@
-﻿@model  Post
+﻿@model Post
 @{
     ViewData["Title"] = "Post";
 }
 
-<h2>@Model.Title</h2>
+<h2 class="text-left"><b>@Model.Title</b></h2>
+<h4 class="text-right"><i>@Model.Created.ToShortDateString()</i></h4>
 
 @if (!String.IsNullOrEmpty(Model.Image))
 {
+    <br />
     var image_path = $"/Image/{Model.Image}";
-    <img src=@image_path/>
+    <img src=@image_path style="display:block; margin-left:auto; margin-right:auto; width:1000px" />
 }
-
+<br />
 <p>@Model.Body</p>

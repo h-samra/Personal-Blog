@@ -5,7 +5,6 @@ C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\bin\Debug\netcoreapp2.1\B
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\bin\Debug\netcoreapp2.1\Blog.pdb
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\bin\Debug\netcoreapp2.1\Blog.Views.dll
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\bin\Debug\netcoreapp2.1\Blog.Views.pdb
-C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.csprojAssemblyReference.cache
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.csproj.CoreCompileInputs.cache
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.RazorAssemblyInfo.cache
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.RazorAssemblyInfo.cs

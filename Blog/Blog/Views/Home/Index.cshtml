@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Home Page";
     var empty = true;
+    var fbLink = "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgoogle.com%2F&amp;src=sdkpreparse";
 }
 
 
@@ -13,39 +14,62 @@
     <title>@ViewData["Title"] - Herman's Blog</title>
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-
-
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
     <br />
-    <h2>Welcome to my blog!</h2>
-    <p>My name is Herman, and this is my personal website where I share the projects I like to work on.</p>
-    <p>Click on a link to view more details on the blog post.</p>
-    <br />
-
-    <div>
-        <ul>
-            @foreach (var post in Model)
-            {
-                <li>
-                    <p>
-                        @post.Created.ToShortDateString() -
-                        <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
-                            @post.Title
-                        </a>
-                    </p>
-                    @{empty = false;}
-                </li>
-
-            }
-        </ul>
-        @if (empty)
-        {
-            <p>There are currently no blog posts to display.</p>
-            <p>This site is currently under 1 week old, so check back soon for great content posted bi-weekly.</p>
-            <p>Until there are posts added, check out the <a asp-area="" asp-controller="Home" asp-action="About">about</a> page to learn about me and about how this site was built!</p>
-        }
+    <div class="card border-primary mb-12">
+        <h3 class="card-header">Welcome to my blog!</h3>
+        <div class="card-body">
+            <p class="card-text">My name is Herman, and this is my personal website where I share the projects I like to work on.</p>
+        </div>
     </div>
 
+    <br />
+    <br />
+
+    <div class="row">
+        @foreach (var post in Model)
+        {
+            <div class="col-sm-4">
+                <div class="card mb-3">
+                    <a asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">
+                        <h3 class="card-header">@post.Title</h3>
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-subtitle text-muted">@post.Created.ToShortDateString()</h6>
+                    </div>
+                    @{var image_path = $"/Image/{post.Image}";}
+                    <img style="height: 200px; display: block;" src="@image_path" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">Long Summury to give the use some idea of what this article is about</p>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a class="list-group-item" asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">More Details</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a>Share on Facebook! &nbsp; &nbsp;</a>
+                        <a href=@fbLink class="card-link"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <a>
+                    @{empty = false;}
+                </a>
+            </div>
+        }
+
+    </div>
+    @if (empty)
+    {
+        <div class="card border-primary mb-12">
+            <div class="card-header">>There are currently no blog posts to display.</div>
+            <div class="card-body">
+                <p class="card-text">This site is currently under 1 week old, so check back soon for great content posted bi-weekly.</p>
+                <p class="card-text">Until there are posts added, check out the <a asp-area="" asp-controller="Home" asp-action="About">about</a> page to learn about me and about how this site was built!</p>
+            </div>
+        </div>
+    }
 </body>
 </html>

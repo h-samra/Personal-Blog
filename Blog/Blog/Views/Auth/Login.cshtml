@@ -1,19 +1,24 @@
-﻿@model  Blog.ViewModels.LoginViewModel
+﻿@model Blog.ViewModels.LoginViewModel
 @{
     ViewData["Title"] = "Login";
 }
 <br />
-<h2>Login</h2>
 
-<form asp-controller="Auth" asp-action="Login" method="post">
-    <div>
-        <label>Username</label>
-        <input asp-for="Username" />
+<div class="card border-primary mb-6" style="max-width: 30rem;">
+    <h3 class="card-header">Log in</h3>
+    <div class="card-body">
+        <form asp-controller="Auth" asp-action="Login" method="post">
+            <div class="form-group">
+                <label>Username</label>
+                <input asp-for="Username" />
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input asp-for="Password" type="password" />
+            </div>
+            <input type="submit" class="btn btn-primary active" aria-pressed="true" value="Sign In" />
+        </form>
+        <p class="card-text">At this time, only the site administrator is permitted to log in.</p>
     </div>
-    <div>
-        <label>Password</label>
-        <input asp-for="Password" type="password"/>
-    </div>
-    <input type="submit" value="Sign In" />
-</form>
+</div>
 

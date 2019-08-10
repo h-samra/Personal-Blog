@@ -32,3 +32,4 @@ C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\R
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Login.g.cshtml.cs
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Panel\Index.g.cshtml.cs
 C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Razor\Views\Panel\Edit.g.cshtml.cs
+C:\Users\herma\Documents\Repos\Personal-Blog\Blog\Blog\obj\Debug\netcoreapp2.1\Blog.csprojAssemblyReference.cache

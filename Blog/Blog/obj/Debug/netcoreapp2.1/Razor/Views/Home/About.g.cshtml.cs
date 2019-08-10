@@ -65,12 +65,12 @@ using Blog.Models;
             WriteLiteral("\r\n<html>\r\n");
             EndContext();
             BeginContext(51, 191, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b6444f575de4d6999d0c41a8a0a48e9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "338413698ae74309b0765915a58acc3c", async() => {
                 BeginContext(57, 105, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\">\r\n    <script src=\"https://use.fontawesome.com/d1341f9b7a.js\"></script>\r\n    ");
                 EndContext();
                 BeginContext(162, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "eccb65fc32654868bff78f5c94b3179d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ecd71f6ab9ab42aab9daaaf3a28093ab", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -104,12 +104,12 @@ using Blog.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(244, 2347, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e2e76239b84461984b3454087155c11", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f87110fee0242acb3ab40e551ba8181", async() => {
                 BeginContext(250, 153, true);
                 WriteLiteral("\r\n    <br />\r\n\r\n    <div class=\"card border-primary mb-12\">\r\n        <h3 class=\"card-header\">About Me</h3>\r\n        <div class=\"card-body\">\r\n            ");
                 EndContext();
                 BeginContext(403, 104, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "76256b4edfce4d1fbdf4e68390b534e7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7320240710e44cfc9d4a0b120634126f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -1,6 +1,7 @@
 ﻿@model Post
 @{
     ViewData["Title"] = "Post";
+    var CurrentUrl = $"https://localhost:44363/Home/Post/{Model.Id}";
 }
 <!DOCTYPE html>
 <html>
@@ -22,7 +23,8 @@
         <div class="card-body">
             <div>
                 <a>Share to Facebook! &nbsp; &nbsp;</a>
-                <a href="" class="card-link"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+                @{var fbLink = $"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F{CurrentUrl}%2F&amp;src=sdkpreparse";}
+                <a href=@fbLink class="card-link"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
                 <h4 class="text-right">@Model.Created.ToShortDateString()</h4>
                 <br />
                 <br />
@@ -37,7 +39,7 @@
     <div class="card border-primary bg-light mb-12">
         <h2 class="card-header">Comments</h2>
         <div class="card-body">
-            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="10"></div>
+            <div class="fb-comments" data-href=@CurrentUrl data-width="" data-numposts="10"></div>
 
         </div>
     </div>

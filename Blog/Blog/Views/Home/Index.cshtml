@@ -44,13 +44,13 @@
                     @{var image_path = $"/Image/{post.Image}";}
                     <img style="height: 200px; display: block;" src="@image_path" alt="Card image">
                     <div class="card-body">
-                        <p class="card-text">Long Summury to give the use some idea of what this article is about</p>
+                        <p class="card-text">"summury goes here"</p>
                     </div>
                     <div class="list-group list-group-flush">
                         <a class="list-group-item" asp-controller="Home" asp-action="Post" asp-route-id="@post.Id">More Details</a>
                     </div>
                     <div class="card-footer text-muted">
-                        <a>Share on Facebook! &nbsp; &nbsp;</a>
+                        <a>Share to Facebook! &nbsp; &nbsp;</a>
                         <a href=@fbLink class="card-link"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
                     </div>
                 </div>

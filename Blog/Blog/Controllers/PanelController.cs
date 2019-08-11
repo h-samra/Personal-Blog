@@ -88,6 +88,7 @@ namespace Blog.Controllers
         public async Task<IActionResult> Remove(int id)
         {
             _repo.RemovePost(id);
+            // _file.RemoveThumbnail();
             await _repo.SaveChangesAsync();
             return RedirectToAction("Index");
         }

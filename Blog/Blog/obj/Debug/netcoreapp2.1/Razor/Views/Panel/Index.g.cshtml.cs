@@ -69,12 +69,12 @@ using Blog.Models;
             WriteLiteral("<br />\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(91, 165, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9978a211fb544495b9c0fb8f2d51bbc0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0bdf1c6d09514e149f24161812dc7c55", async() => {
                 BeginContext(97, 105, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\">\r\n    <script src=\"https://use.fontawesome.com/d1341f9b7a.js\"></script>\r\n    ");
                 EndContext();
                 BeginContext(202, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9342ba89c68e484bb699b7cfc4996b10", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c5be0c1ad70f4413afc7def19123dbd7", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -108,7 +108,7 @@ using Blog.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(258, 1336, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "692e7230a6c9417da75d7a3faa53c721", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef28d7c46e8e4917acf7680c8113f6eb", async() => {
                 BeginContext(264, 177, true);
                 WriteLiteral("\r\n    <div class=\"card border-primary mb-6\">\r\n        <h3 class=\"card-header\">Admin Pannel</h3>\r\n        <div class=\"card-body\">\r\n            <table class=\"table table-hover\">\r\n");
                 EndContext();
@@ -122,7 +122,7 @@ using Blog.Models;
                 WriteLiteral("                    <tbody>\r\n                        <tr>\r\n                            <th scope=\"row\">\r\n                                ");
                 EndContext();
                 BeginContext(643, 154, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce164fd53298480b8217cb4fb17f6354", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff97d305542f4bda9ce7aadd82c0694d", async() => {
                     BeginContext(710, 38, true);
                     WriteLiteral("\r\n                                    ");
                     EndContext();
@@ -169,7 +169,7 @@ using Blog.Models;
                 WriteLiteral("\r\n                            </th>\r\n                            <th scope=\"col\">\r\n                                ");
                 EndContext();
                 BeginContext(912, 195, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0da354b141af496482ed084b8462bb49", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97adcdbc98f444a2986b582e44be21ca", async() => {
                     BeginContext(980, 123, true);
                     WriteLiteral("\r\n                                    <i class=\"fa fa-edit fa-lg\" aria-hidden=\"true\"></i>\r\n                                ");
                     EndContext();
@@ -206,7 +206,7 @@ using Blog.Models;
                 WriteLiteral("\r\n                            </th>\r\n                            <th scope=\"col\">\r\n                                ");
                 EndContext();
                 BeginContext(1222, 198, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9c4825f70ef4d0aa0965711781a573d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e8006b4ec4b4caa8e943889e6918fbc", async() => {
                     BeginContext(1292, 124, true);
                     WriteLiteral("\r\n                                    <i class=\"fa fa-trash fa-lg\" aria-hidden=\"true\"></i>\r\n                                ");
                     EndContext();

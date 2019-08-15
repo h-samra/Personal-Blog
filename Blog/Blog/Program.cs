@@ -38,10 +38,10 @@ namespace Blog
                 {
                     var adminUser = new IdentityUser
                     {
-                        UserName = "your-username-here",
+                        UserName = "admin",
                         Email = "admin@test.com"
                     };
-                    userMgr.CreateAsync(adminUser, "your-password-here").GetAwaiter().GetResult();
+                    userMgr.CreateAsync(adminUser, "password1").GetAwaiter().GetResult();
                     userMgr.AddToRoleAsync(adminUser, adminRole.Name).GetAwaiter().GetResult();
                 }
             }

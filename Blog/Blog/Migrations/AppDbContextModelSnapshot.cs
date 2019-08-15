@@ -31,8 +31,6 @@ namespace Blog.Migrations
 
                     b.Property<string>("Image");
 
-                    b.Property<string>("Summury");
-
                     b.Property<string>("Title");
 
                     b.HasKey("Id");
